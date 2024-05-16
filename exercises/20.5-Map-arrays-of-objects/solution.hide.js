@@ -10,7 +10,7 @@ let simplifier = function(person) {
 	// Your code here
 	let currentDate = new Date();
 	let age = currentDate.getFullYear() - person.birthDate.getFullYear();
-	let birthDateThisYear = new Date(currentDate.getFullYear(), person.birthDate.getMonth(), person.birthDate.getDate());
+	let birthDateThisYear = new Date(currentDate.getFullYear(),  person.birthDate.getDate(), person.birthDate.getMonth());
 
 	if (currentDate < birthDateThisYear) {
 	  age = age - 1;

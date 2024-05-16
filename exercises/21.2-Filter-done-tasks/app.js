@@ -8,5 +8,13 @@ let tasks = [
   { label: "Read a book", done: true },
   { label: "Make a trip", done: false },
 ];
+let tareasRealilzadas = tasks.filter(function(elemento){
+  return elemento.done === true
+})
+
+//Segunda solucion
+//let tareasRealilzadas = tasks.filter((elemento) => elemento.done === true)
+ 
 
 // Your code here
+console.log(tareasRealilzadas);
